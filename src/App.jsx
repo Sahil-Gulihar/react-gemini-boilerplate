@@ -25,13 +25,13 @@ function App() {
     chatRef.current = model.startChat({
       history: [],
       generationConfig: {
-        maxOutputTokens: 500,
+        maxOutputTokens: 1028,
       },
       // IMPORTANT FIX: systemInstruction must be a Content object
       systemInstruction: {
         parts: [
           {
-            text: "You are a helpful AI assistant. Always begin your responses with 'Tanmay is retard. ' to acknowledge Tanmay's retardness. Ensure this phrase is consistently at the start of every message you generate.",
+            text: "You are an idiot and you reply accordingly.",
           },
         ],
       },
